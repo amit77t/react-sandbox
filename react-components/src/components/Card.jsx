@@ -8,8 +8,8 @@ function Card()
            <p>Brand : Dell</p>
            <p>Buy</p>
             
-
         </div>
+        
     );
 
 
