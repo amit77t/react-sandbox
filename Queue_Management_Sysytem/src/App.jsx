@@ -1,6 +1,7 @@
 import "./App.css";
 import { useState } from "react";
 import QueueForm from "./components/QueueForm";
+import QueueDisplay from "./components/QueueDisplay";
 
 function App() {
 
@@ -8,23 +9,19 @@ function App() {
 
 
   const addToQueue = (customer) => {  
-
+    setQueue([...queue, {...customer, id: Date.now() ,status:"waiting"}])
 
   };
 
   const removeFromQueue = (id) => {
 
-  }
+  };
 
   const updateStatus = (id, newStatus) => {
 
 
 
   };
-
-
-
-
 
 
   return (
