@@ -9,17 +9,18 @@ function App() {
 
 
   const addToQueue = (customer) => {  
-    setQueue([...queue, {...customer, id: Date.now() ,status:"waiting"}])
+    setQueue([...queue, {...customer, id: Date.now() ,status:"waiting"}]);
 
   };
 
   const removeFromQueue = (id) => {
 
+     setQueue(queue.filter((customer) => customer.id !== id));
   };
 
   const updateStatus = (id, newStatus) => {
 
-
+      setQueue(queue.map((customer) => customer.id === id ? {...customer, status: newStatus} : customer));  
 
   };
 
