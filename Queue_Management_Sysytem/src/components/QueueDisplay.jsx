@@ -19,9 +19,9 @@ function QueueDisplay({ queue, onRemove, onUpdateStatus }) {
 
             <h2>Current Queue</h2>
             {queue.length === 0 ? (
-                <p>No customers in the queue</p>
+                <p className="empty-queue">No customers in the queue</p>
             ) : (
-                <div>
+                <div className="queue-list">
                     {queue.map((customer) => (
                         <div key={customer.id}>
                             <p>{customer.name} - {customer.service}</p>
