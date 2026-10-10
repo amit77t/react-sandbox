@@ -1,6 +1,7 @@
 
 import './App.css'
 import ControlInput from './components/ControlInput'
+import LiveNameClearButton from './components/LiveNameClearButton';
 
 function App() {
   
@@ -9,6 +10,7 @@ function App() {
 
    <>
     <ControlInput/>
+    <LiveNameClearButton/>
    </>
 
   );
