@@ -1,12 +1,15 @@
 import './App.css'
+import ProductCard from './components/ProductCard'
 
 
-function App()
-{
-  return(
+const App=()=>{
+  return (
     <>
-      <h1>React Basic Component</h1>
+    <h1>Products Available</h1>
+     
+     <ProductCard/> 
     </>
+    
   )
 }
 
