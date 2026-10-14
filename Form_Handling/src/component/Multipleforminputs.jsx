@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-function Multipleforminputs(s)
+function Multipleforminputs()
 {  
     const [name, setName]=useState("");
     const [email, setEmail]=useState("");
